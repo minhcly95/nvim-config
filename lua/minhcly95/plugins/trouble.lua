@@ -6,9 +6,10 @@ return {
     cmd = { "TroubleToggle", "Trouble" },
     keys = {
         { prefix,        desc = "Trouble" },
-        { prefix .. "X", "<cmd>TroubleToggle workspace_diagnostics<cr>", desc = "Workspace diagnostics" },
-        { prefix .. "x", "<cmd>TroubleToggle document_diagnostics<cr>",  desc = "Document diagnostics" },
-        { prefix .. "q", "<cmd>TroubleToggle quickfix<cr>",              desc = "Quickfix list" },
+        { prefix .. "x", "<cmd>Trouble diagnostics toggle<cr>",              desc = "Diagnostics" },
+        { prefix .. "X", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", desc = "Buffer Diagnostics" },
+        { prefix .. "q", "<cmd>Trouble qflist toggle<cr>",                   desc = "Location list" },
+        { prefix .. "l", "<cmd>Trouble qflist toggle<cr>",                   desc = "Quickfix list" },
     },
     opts = {
         use_diagnostic_signs = true,

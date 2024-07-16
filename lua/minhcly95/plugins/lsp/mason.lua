@@ -30,6 +30,13 @@ return {
                             }
                         }
                     end,
+                    ["clangd"] = function()
+                        lspconfig.clangd.setup {
+                            cmd = {
+                                "clangd"
+                            }
+                        }
+                    end,
                 }
             }
         end,

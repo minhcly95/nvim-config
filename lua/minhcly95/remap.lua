@@ -25,7 +25,7 @@ vim.keymap.set("n", "n", "nzzzv", { desc = 'Next match' })
 vim.keymap.set("n", "N", "Nzzzv", { desc = 'Previous match' })
 
 -- Open link
-vim.keymap.set("n", "gx", [[:execute '!start ' . shellescape(expand('<cfile>'), 1)<CR>]], { noremap = true, desc = 'Open link' })
+-- vim.keymap.set("n", "gx", [[:execute '!start ' . shellescape(expand('<cfile>'), 1)<CR>]], { noremap = true, desc = 'Open link' })
 
 -- Window navigation
 -- vim.keymap.set("n", "<C-h>", "<C-w>h")
