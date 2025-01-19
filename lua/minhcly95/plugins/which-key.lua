@@ -14,12 +14,12 @@ return {
         local wk = require 'which-key'
         wk.setup(opts)
 
-        wk.register({
-            ['<leader>f'] = { name = '+file' },
-            ['<leader>t'] = { name = '+tab' },
-            ['<leader>j'] = { name = '+julia' },
-            ['<leader>cd'] = { name = '+change dir' },
-            ['<leader>x'] = { name = '+trouble' },
+        wk.add({
+            { "<leader>cd", group = "change dir" },
+            { "<leader>f", group = "file" },
+            { "<leader>j", group = "julia" },
+            { "<leader>t", group = "tab" },
+            { "<leader>x", group = "trouble" },
         })
     end
 }
